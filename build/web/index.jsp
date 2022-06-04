@@ -52,10 +52,14 @@
                             <h5 class="card-title"><%=res.getString("NAME")%></h5>
                             <p class="card-text"><%=res.getString("DESCRIPTION")%></p>
                             <p class="card-text">Q <%=res.getString("PRICE")%></p>
-                            <a href="#" class="btn btn-primary" onclick="alert('accion de comprar')">Comprar</a>
+                            
+                            <form id="sending<%=res.getString("COD_BREAD")%>" method="post" action="shop.jsp">
+                                <input  type="hidden" name="cod_bread" value="<%=res.getString("COD_BREAD")%>" >
+                                <a class="btn btn-primary" onclick="document.getElementById('sending<%=res.getString("COD_BREAD")%>').submit();">Comprar</a>
+                            </form>
                         </div>
                     </div> 
-                </div> 
+                </div>  
                 <%
                             }
                         }
