@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class clsConection {
     private String conectionString = "jdbc:sqlserver://localhost;" +
 			"databaseName=DB_BAKER;user=sa;password=Umg$19;";
-    public Connection conectar() throws Exception{
+    public Connection conect() throws Exception{
         Connection cn=null;
         try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
