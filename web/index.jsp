@@ -42,6 +42,7 @@
                     ResultSet res = objBread.fncQueryBread();
                      if (res != null){
                         while(res.next()){ 
+                            if(res.getString("IS_ACTIVE").equals("1") && Integer.parseInt(res.getString("STOCK")) > 0 ){
                 %>
                 <div class="col-3 p-3">
                     <div class="card" style="width: 18rem;">
@@ -53,12 +54,13 @@
                             <p class="card-text">Q <%=res.getString("PRICE")%></p>
                             <a href="#" class="btn btn-primary" onclick="alert('accion de comprar')">Comprar</a>
                         </div>
-                    </div>
-                </div>
+                    </div> 
+                </div> 
                 <%
-                                }
                             }
-    
+                        }
+                    }
+      
                 %>
 
             </div>
