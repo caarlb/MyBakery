@@ -9,13 +9,28 @@ public class clsQuerys {
 
     public clsQuerys() {
     }
-    
-    public ResultSet fcnBreadQuery() throws Exception {
+
+    public ResultSet fncBreadQuery() throws Exception {
         ResultSet resp = null;
         try {
-            clsConection Con = new clsConection();
-            Connection cn = Con.conect();
+            clsConection con = new clsConection();
+            Connection cn = con.conect();
             String query = "SELECT * FROM TB_BREAD";
+            PreparedStatement ps = cn.prepareStatement(query);
+            resp = ps.executeQuery();
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resp;
+    }
+
+    public ResultSet fncBreadDetailsQuery(int breadCode) throws Exception {
+        ResultSet resp = null;
+        try {
+            clsConection con = new clsConection();
+            Connection cn = con.conect();
+            String query = "SELECT * FROM TB_BREAD\n"
+                    + "WHERE COD_BREAD = '" + breadCode + "';";
             PreparedStatement ps = cn.prepareStatement(query);
             resp = ps.executeQuery();
         } catch (SQLException ex) {

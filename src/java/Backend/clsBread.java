@@ -96,11 +96,17 @@ public class clsBread {
         ResultSet resp = null;
 
         clsQuerys objQuery = new clsQuerys();
-        resp = objQuery.fcnBreadQuery();
+        resp = objQuery.fncBreadQuery();
 
         return resp;
+    }
+    
+    public ResultSet fncQuerySpecificBread(int breadCode) throws Exception{
+        ResultSet resp = null;
+        clsQuerys objQuery = new  clsQuerys();
+        resp = objQuery.fncBreadDetailsQuery(breadCode);
         
-        
+        return resp;
     }
 
 }

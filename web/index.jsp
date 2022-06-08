@@ -32,7 +32,7 @@
         <!-- /Header -->
 
         <!-- Main -->
-        <p>Bienvenido a la pagina de compras numero de 1 de la television humoristica</p>
+        <p>Bienvenido a la pagina donde podras comprar todo el pan que tu gustes y no te disgustes</p>
 
         <div class="container">
             <div class="row ">
@@ -75,7 +75,7 @@
         <!-- Footer -->
         <footer class="bg-dark text-center text-lg-start">
             <!-- Copyright -->
-            <div class="text-center p-3">
+            <div class="text-center p-2">
                 <span style="color: white;"> Derechos reservados | 2022 | Carlos Alberto Sanchez Mendoza</span>
             </div>
             <!-- Copyright -->
