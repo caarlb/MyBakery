@@ -60,9 +60,6 @@
 
 
 
-        <h1>Codigo de producto a comprar: <%=codigo%> </h1>
-
-
         <!-- Main -->
         <section id="main">
             <div class="container">
@@ -72,24 +69,28 @@
                     </div>
                 </div>
                 <div class="row ">
-                    <div class="col-2 p-2">
-                        <img src="img/3a.PNG" class="nav-link active"></img>
+                    <div class="col-3 p-2">
+                        <img src="img/<%=bread.getImg1()%>" class="nav-link active"></img>
                     </div>
                     <div class="col-2 p-2">
-                        <img src="img/2a.PNG" class="nav-link active"></img>
+                        <img src="img/<%=bread.getImg2()%>" class="nav-link active"></img>
                     </div>
-                    <div class="col p-2">
-                        <div class="card">
-                            <h3 class="card-header"><%=bread.getName()%></h3>
-                            <div class="card-body">
-                                <h5 class="card-title"><%=bread.getDescription()%></h5>
-                                <p class="card-text">
-                                    <input type="number" class="count" name="quantiy" min="1" value="1">
-                                </p>
-                                <a href="#" class="btn btn-primary">Comprar</a>
+
+                    <div class="row ">
+                        <div class="col p-2">
+                            <div class="card">
+                                <h3 class="card-header"><%=bread.getName()%></h3>
+                                <div class="card-body">
+                                    <h5 class="card-title"><%=bread.getDescription()%></h5>
+                                    <p class="card-text">
+                                        <input type="number" class="count" name="quantiy" min="1" value="1">
+                                    </p>
+                                    <a href="#" class="btn btn-primary" onclick="alert('comprando esto')">Comprar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
