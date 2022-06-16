@@ -1,7 +1,7 @@
 
 # My Bakery
 
-Website para la compra de pan de diferente variedades. Listado dinamica del catalogo en existencias en la base de datos para elegir el favorito. 
+Website para la compra de pan de diferente variedades. Lista dinamica del catalogo segun existencias en la base de datos para elegir el favorito del consumidor. 
 
 ## Tech Stack
 
